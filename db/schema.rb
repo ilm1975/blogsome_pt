@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727224142) do
+ActiveRecord::Schema.define(version: 20160727232645) do
 
   create_table "blog_postrails", force: :cascade do |t|
     t.string   "generate"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160727224142) do
     t.text     "comment_entry"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "blog_post_id"
   end
 
 end
